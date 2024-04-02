@@ -33,12 +33,12 @@ createApp({
                 done: false
             }
             let nextId = 0;
-            this.starShip.foreach((el) => {
+            this.starShip.forEach((el) => {
                 if(nextId < el.id) {
                     nextId = el.id;
                 }
             });
-            newComponent.id= nextId + 1;
+            newComponent.id = nextId + 1;
             this.starShip.push(newComponent);
             this.componentText = '';
             console.log(this.starShip);

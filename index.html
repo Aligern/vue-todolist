@@ -25,7 +25,7 @@
                     <span :class="{'text-decoration-line-through' : newItem.done}" @click="toggleDone(newItem.id)" class="pointer">
 
                         {{newItem.text}}
-                        
+
                     </span>
 
                     <i class="fa-regular fa-trash-can" @click="removeItem(newItem.id)"></i>
@@ -34,9 +34,11 @@
             </ul>
 
             <div>
+                
                 <h3>
                     Insert the other components
                 </h3>
+
                 <div>
                     <label for="shiptext" class="form-label">
                         Insert ship component
