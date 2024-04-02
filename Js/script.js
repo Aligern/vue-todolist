@@ -15,7 +15,7 @@ createApp({
             const newItem = this.starShip.find((el) => {
                 return el.id === id;
             })
-            console.log(newItem);
+           // console.log(newItem);
             if (newItem) {
                 newItem.done = !newItem.done;
             }

@@ -21,7 +21,7 @@ export const starShip = [
     },
     {
         id: 5,
-        text: 'Quantum engine',
+        text: 'Fuel tank',
         done: false
     },
 ]
