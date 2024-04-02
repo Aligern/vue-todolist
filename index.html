@@ -15,11 +15,13 @@
     <div id="app">
 
         <main class="container my-4 bg-light">
+
             <h1>
                 Our Starship Components
             </h1>
 
             <ul class="list-group  list-group-flush">
+                
                 <li class="list-group-item d-flex justify-content-between" v-for="(newItem, index) in starShip" :key="newItem.id">
 
                     <span :class="{'text-decoration-line-through' : newItem.done}" @click="toggleDone(newItem.id)" class="pointer">
@@ -28,27 +30,34 @@
 
                     </span>
 
-                    <i class="fa-regular fa-trash-can" @click="removeItem(newItem.id)"></i>
+                    <i class="fa-regular fa-trash-can pointer" @click="removeItem(newItem.id)"></i>
 
                 </li>
             </ul>
 
             <div>
-                
+
                 <h3>
                     Insert the other components
                 </h3>
 
-                <div>
+                <div class="mb-3">
+
                     <label for="shiptext" class="form-label">
                         Insert ship component
                     </label>
+
                     <input type="text" class="form-control"
                     id="shiptext" @keyup.enter="addComponent">
+
                     <button class="btn btn-primary" @click="addComponent">
+
                         add
+
                     </button>
+
                 </div>
+
             </div>
 
 
